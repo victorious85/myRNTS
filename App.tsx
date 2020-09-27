@@ -26,6 +26,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import { Body } from './App.styled'
+
 declare const global: {HermesInternal: null | {}};
 
 const App = () => {
@@ -42,7 +44,7 @@ const App = () => {
               <Text style={styles.footer}>Engine: Hermes</Text>
             </View>
           )}
-          <View style={styles.body}>
+          <Body>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
@@ -69,7 +71,7 @@ const App = () => {
               </Text>
             </View>
             <LearnMoreLinks />
-          </View>
+          </Body>
         </ScrollView>
       </SafeAreaView>
     </>
